@@ -344,7 +344,7 @@ function teleMiddleConesIncrease()
             </tr>
          </tbody>
       </table>
-      <p id="text" style="display:none">      <textarea placeholder="Please describe why the robot was disabled." name="dbfs" cols="50" rows="5"></textarea></p>
+      <p id="text" style="display:none">      <textarea placeholder="Please describe why the robot was disabled." name="whydisabled" cols="50" rows="5"></textarea></p>
       <h3><a data-toggle="tooltip" title="<img class='img-thumbnail' src='explain.png'/>">Game Piece Explainer </a></h3>
       <h3>Auto Period</h3>
       <table id="tablePreview" class="table table-striped table-sm table-borderless table-responsive align-middle">
@@ -358,11 +358,11 @@ function teleMiddleConesIncrease()
          <tbody>
             <tr>
                <th scope="row">High</th>
-               <td><input class="col-5"  id="highCones" type="number" required placeholder="##" value="0"></input>
+               <td><input class="col-5"  name="autohighCones" id="highCones" type="number" required placeholder="##" value="0"></input>
                   <input type="button" value="+" onclick="highConesIncrease()">
                   <input type="button" value="-" onclick="highConesDecrease()">
                </td>
-               <td><input class="col-5"  id="highCubes" type="number" required placeholder="##" value="0"></input>
+               <td><input class="col-5"  name="autohighCubes" id="highCubes" type="number" required placeholder="##" value="0"></input>
                   <input type="button" value="+" onclick="highCubesIncrease()">
                   <input type="button" value="-" onclick="highCubesDecrease()">
                </td>
@@ -371,11 +371,11 @@ function teleMiddleConesIncrease()
 
             <tr>
                <th scope="row">Middle</th>
-               <td><input class="col-5"  id="middleCones" type="number" required placeholder="##" value="0"></input>
+               <td><input class="col-5" name="automiddleCones" id="middleCones" type="number" required placeholder="##" value="0"></input>
                   <input type="button" value="+" onclick="middleConesIncrease()">
                   <input type="button" value="-" onclick="middleConesDecrease()">
                </td>
-               <td><input class="col-5"  id="middleCubes" type="number" required placeholder="##" value="0"></input>
+               <td><input class="col-5"  name="automiddleCubes" id="middleCubes" type="number" required placeholder="##" value="0"></input>
                   <input type="button" value="+" onclick="middleCubesIncrease()">
                   <input type="button" value="-" onclick="middleCubesDecrease()">
                </td>
@@ -384,11 +384,11 @@ function teleMiddleConesIncrease()
 
             <tr>
                <th scope="row">Low</th>
-               <td><input class="col-5"  id="lowCones" type="number" required placeholder="##" value="0"></input>
+               <td><input class="col-5" name="autolowCones" id="lowCones" type="number" required placeholder="##" value="0"></input>
                   <input type="button" value="+" onclick="lowConesIncrease()">
                   <input type="button" value="-" onclick="lowConesDecrease()">
                </td>
-               <td><input class="col-5"  id="lowCubes" type="number" required placeholder="##" value="0"></input>
+               <td><input class="col-5" name="autolowCubes"  id="lowCubes" type="number" required placeholder="##" value="0"></input>
                   <input type="button" value="+" onclick="lowCubesIncrease()">
                   <input type="button" value="-" onclick="lowCubesDecrease()">
                </td>
@@ -400,11 +400,11 @@ function teleMiddleConesIncrease()
             <td></td>
             <td>
                <div class="form-group">
-                  <select class="form-control col-8" name="endgame">
-                     <option value="0">None</option>
-                     <option value="parked">Docked</option>
-                     <option value="hung">Engaged</option>
-                     <option value="hung">Parked</option>
+                  <select class="form-control col-8" name="autoendgame">
+                     <option name="autoNone" value="0">None</option>
+                     <option name="autoDocked" value="parked">Docked</option>
+                     <option name="autoEngaged" value="hung">Engaged</option>
+                     <option name="autoParked" value="parked">Parked</option>
                   </select>
                </div>
             </td>
@@ -423,11 +423,11 @@ function teleMiddleConesIncrease()
          <tbody>
             <tr>
                <th scope="row">High</th>
-               <td><input class="col-5"  id="telehighCones" type="number" required placeholder="##" value="0"></input>
+               <td><input class="col-5" name="telehighCones" id="telehighCones" type="number" required placeholder="##" value="0"></input>
                   <input type="button" value="+" onclick="telehighConesIncrease()">
                   <input type="button" value="-" onclick="telehighConesDecrease()">
                </td>
-               <td><input class="col-5"  id="telehighCubes" type="number" required placeholder="##" value="0"></input>
+               <td><input class="col-5"  name="telehighCubes" id="telehighCubes" type="number" required placeholder="##" value="0"></input>
                   <input type="button" value="+" onclick="telehighCubesIncrease()">
                   <input type="button" value="-" onclick="telehighCubesDecrease()">
                </td>
@@ -436,11 +436,11 @@ function teleMiddleConesIncrease()
 
             <tr>
                <th scope="row">Middle</th>
-               <td><input class="col-5"  id="teleMiddleCones" type="number" required placeholder="##" value="0"></input>
+               <td><input class="col-5"  name="teleMiddleCubes" id="teleMiddleCones" type="number" required placeholder="##" value="0"></input>
                   <input type="button" value="+" onclick="teleMiddleConesIncrease()">
                   <input type="button" value="-" onclick="teleMiddleConesDecrease()">
                </td>
-               <td><input class="col-5"  id="teleMiddleCubes" type="number" required placeholder="##" value="0"></input>
+               <td><input class="col-5"  name="teleMiddleCubes" id="teleMiddleCubes" type="number" required placeholder="##" value="0"></input>
                   <input type="button" value="+" onclick="teleMiddleCubesIncrease()">
                   <input type="button" value="-" onclick="teleMiddleCubesDecrease()">
                </td>
@@ -449,11 +449,11 @@ function teleMiddleConesIncrease()
 
             <tr>
                <th scope="row">Low</th>
-               <td><input class="col-5"  id="teleLowCones" type="number" required placeholder="##" value="0"></input>
+               <td><input class="col-5" name="teleLowCones" id="teleLowCones" type="number" required placeholder="##" value="0"></input>
                   <input type="button" value="+" onclick="teleLowConesIncrease()">
                   <input type="button" value="-" onclick="teleLowConesDecrease()">
                </td>
-               <td><input class="col-5"  id="teleLowCubes" type="number" required placeholder="##" value="0"></input>
+               <td><input class="col-5"  name="teleLowCubes"  id="teleLowCubes" type="number" required placeholder="##" value="0"></input>
                   <input type="button" value="+" onclick="teleLowCubesIncrease()">
                   <input type="button" value="-" onclick="teleLowCubesDecrease()">
                </td>
@@ -461,15 +461,15 @@ function teleMiddleConesIncrease()
             </tr>
          </tbody>
          <tr>
-            <th scope="row">Robot Stage at the end of Auto</th>
+            <th scope="row">Robot Stage at the end of End Game</th>
             <td></td>
             <td>
                <div class="form-group">
                   <select class="form-control col-8" name="endgame">
-                     <option value="0">None</option>
-                     <option value="parked">Docked</option>
-                     <option value="hung">Engaged</option>
-                     <option value="hung">Parked</option>
+                     <option name="endgameNone" value="0">None</option>
+                     <option name="endgameDocked">Docked</option>
+                     <option name="endgameEngaged" value="hung">Engaged</option>
+                     <option name="endgameParked" value="hung">Parked</option>
                   </select>
                </div>
             </td>
@@ -479,24 +479,12 @@ function teleMiddleConesIncrease()
       <h3>Other robot data</h3>
       <th scope="row">Where can they pick up from?
       </th>
-      <td>          <input type="checkbox" name="bad" value="bad">Shelf</input></td>
-      <td>  <input type="checkbox" name="ok" value="ok">Single</td>
-      <td>  <input type="checkbox" id="myCheck" onclick="myFunction()" name="mostly" value="disabled">Double</input></td>
+      <td>          <input type="checkbox" name="pickupShelf" value="bad">Shelf</input></td>
+      <td>  <input type="checkbox" name="pickupSingle" value="ok">Single</td>
+      <td>  <input type="checkbox" name="pickupDouble" id="myCheck" onclick="myFunction()" value="disabled">Double</input></td>
       <br>
       <br>
-      <tr>
-         <th scope="row">Robot Stage in End Game</th>
-         <td></td>
-         <td>
-            <div class="form-group">
-               <select class="form-control col-8" name="endgame">
-                  <option value="0">None</option>
-                  <option value="parked">Docked</option>
-                  <option value="hung">Engaged</option>
-                  <option value="hung">Parked</option>
-               </select>
-            </div>
-         </td>
+     
          <a class="btn btn-primary btn-small" data-toggle="collapse" href="#comments" role="button" aria-expanded="false" aria-controls="comments">
          Add comments
          </a>
