@@ -22,9 +22,9 @@
       text-decoration: none;
       }
    </style>
+   <script src="https:///code.jquery.com/jquery-1.11.1.min.js"></script>
    <link href="https:///netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
    <script src="https:///netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-   <script src="https:///code.jquery.com/jquery-1.11.1.min.js"></script>
    <script>
 
       // AUTO UP DOWN
@@ -35,7 +35,7 @@
           value++;
           document.getElementById('quantity').value = value;
       }
-      
+
       function decrementValue()
       {
           var value = parseInt(document.getElementById('quantity').value, 10);
@@ -44,7 +44,7 @@
           value--;
           document.getElementById('quantity').value = value;
       }
-      
+
       function highConesIncrease()
       {
           var value = parseInt(document.getElementById('highCones').value, 10);
@@ -52,7 +52,7 @@
           value++;
           document.getElementById('highCones').value = value;
       }
-      
+
       function highConesDecrease()
       {
           var value = parseInt(document.getElementById('highCones').value, 10);
@@ -61,8 +61,8 @@
           value--;
           document.getElementById('highCones').value = value;
       }
-      
-      
+
+
       function highCubesIncrease()
       {
           var value = parseInt(document.getElementById('highCubes').value, 10);
@@ -70,7 +70,7 @@
           value++;
           document.getElementById('highCubes').value = value;
       }
-      
+
       function highCubesDecrease()
       {
           var value = parseInt(document.getElementById('highCubes').value, 10);
@@ -90,7 +90,7 @@
           value++;
           document.getElementById('middleCones').value = value;
       }
-      
+
       function middleConesDecrease()
       {
           var value = parseInt(document.getElementById('middleCones').value, 10);
@@ -99,8 +99,8 @@
           value--;
           document.getElementById('middleCones').value = value;
       }
-      
-      
+
+
       function middleCubesIncrease()
       {
           var value = parseInt(document.getElementById('middleCubes').value, 10);
@@ -108,7 +108,7 @@
           value++;
           document.getElementById('middleCubes').value = value;
       }
-      
+
       function middleCubesDecrease()
       {
           var value = parseInt(document.getElementById('middleCubes').value, 10);
@@ -126,7 +126,7 @@
           value++;
           document.getElementById('lowCones').value = value;
       }
-      
+
       function lowConesDecrease()
       {
           var value = parseInt(document.getElementById('lowCones').value, 10);
@@ -135,8 +135,8 @@
           value--;
           document.getElementById('lowCones').value = value;
       }
-      
-      
+
+
       function lowCubesIncrease()
       {
           var value = parseInt(document.getElementById('lowCubes').value, 10);
@@ -144,7 +144,7 @@
           value++;
           document.getElementById('lowCubes').value = value;
       }
-      
+
       function lowCubesDecrease()
       {
           var value = parseInt(document.getElementById('lowCubes').value, 10);
@@ -165,7 +165,7 @@
           value++;
           document.getElementById('telehighCones').value = value;
       }
-      
+
       function telehighConesDecrease()
       {
           var value = parseInt(document.getElementById('telehighCones').value, 10);
@@ -182,7 +182,7 @@
           value++;
           document.getElementById('telehighCubes').value = value;
       }
-      
+
       function telehighCubesDecrease()
       {
           var value = parseInt(document.getElementById('telehighCubes').value, 10);
@@ -200,7 +200,7 @@ function teleMiddleConesIncrease()
           value++;
           document.getElementById('teleMiddleCones').value = value;
       }
-      
+
       function teleMiddleConesDecrease()
       {
           var value = parseInt(document.getElementById('teleMiddleCones').value, 10);
@@ -217,7 +217,7 @@ function teleMiddleConesIncrease()
           value++;
           document.getElementById('teleMiddleCubes').value = value;
       }
-      
+
       function teleMiddleCubesDecrease()
       {
           var value = parseInt(document.getElementById('teleMiddleCubes').value, 10);
@@ -226,8 +226,8 @@ function teleMiddleConesIncrease()
           value--;
           document.getElementById('teleMiddleCubes').value = value;
       }
-      
-  // low level    
+
+  // low level
 
 
   function teleLowConesIncrease()
@@ -237,7 +237,7 @@ function teleMiddleConesIncrease()
           value++;
           document.getElementById('teleLowCones').value = value;
       }
-      
+
       function teleLowConesDecrease()
       {
           var value = parseInt(document.getElementById('teleLowCones').value, 10);
@@ -254,7 +254,7 @@ function teleMiddleConesIncrease()
           value++;
           document.getElementById('teleLowCubes').value = value;
       }
-      
+
       function teleLowCubesDecrease()
       {
           var value = parseInt(document.getElementById('teleLowCubes').value, 10);
@@ -298,11 +298,11 @@ function teleMiddleConesIncrease()
          I usually use the format mk<<shortname>><<eventcode>> (e.g. mk2019vegasnvlv).
          Make sure if you share this source code with other teams, you change the
          placeholder value, lest they get your data!
-         
+
          This key makes it so that you can use the same form for the whole year but then
          extract the data only for one event at a time. It is also an easy way to test the
          data and test different versions of the form (e.g. mktest1, mktest2, etc.).
-         
+
          It is also very important to keep it hidden. That way, users can't change it
          by accident. If they do, the data is much harder to get later. (Aside:
          hidden="hidden" is redundant but parallel. You can always just write hidden).
@@ -484,7 +484,7 @@ function teleMiddleConesIncrease()
       <td>  <input type="checkbox" name="pickupDouble" id="myCheck" onclick="myFunction()" value="disabled">Double</input></td>
       <br>
       <br>
-     
+
          <a class="btn btn-primary btn-small" data-toggle="collapse" href="#comments" role="button" aria-expanded="false" aria-controls="comments">
          Add comments
          </a>
@@ -524,64 +524,64 @@ function teleMiddleConesIncrease()
       *
       * @author C. Scott Asbach
       */
-      
+
       $(document).ready(function() {
-      
+
       /**
       * store the value of and then remove the title attributes from the
       * abbreviations (thus removing the default tooltip functionality of
          * the abbreviations)
       */
       $('abbr').each(function(){
-      
+
       $(this).data('title',$(this).attr('title'));
       $(this).removeAttr('title');
-      
+
       });
-      
+
         /**
       * when abbreviations are mouseover-ed show a tooltip with the data from the title attribute
       */
       $('abbr').mouseover(function() {
-      
+
       // first remove all existing abbreviation tooltips
       $('abbr').next('.tooltip').remove();
-      
+
       // create the tooltip
       $(this).after('<span class="tooltip">' + $(this).data('title') + '</span>');
-      
+
       // position the tooltip 4 pixels above and 4 pixels to the left of the abbreviation
       var left = $(this).position().left + $(this).width() + 4;
       var top = $(this).position().top - 4;
       $(this).next().css('left',left);
       $(this).next().css('top',top);
-      
+
       });
-      
+
         /**
       * when abbreviations are clicked trigger their mouseover event then fade the tooltip
       * (this is friendly to touch interfaces)
       */
       $('abbr').click(function(){
-      
+
       $(this).mouseover();
-      
+
       // after a slight 2 second fade, fade out the tooltip for 1 second
       $(this).next().animate({opacity: 0.9},{duration: 2000, complete: function(){
       	$(this).fadeOut(1000);
       }});
-      
+
       });
-      
+
       /**
       * Remove the tooltip on abbreviation mouseout
       */
       $('abbr').mouseout(function(){
-      
+
       $(this).next('.tooltip').remove();
-      
+
       });
-      
+
       });
    </script>
    <script src="main.js"></script>
@@ -591,7 +591,7 @@ function teleMiddleConesIncrease()
       var checkBox = document.getElementById("myCheck");
       // Get the output text
       var text = document.getElementById("text");
-      
+
       // If the checkbox is checked, display the output text
       if (checkBox.checked == true){
       text.style.display = "block";
